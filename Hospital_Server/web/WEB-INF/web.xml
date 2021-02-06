@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <!-- 下面的这个servlet-name是随意命名的，只需要与下面的servlet-mapping对应起来就可以了 -->
+        <servlet-name>HelloWorld</servlet-name>
+        <servlet-class>com.shop.Servlet.TestServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloWorld</servlet-name>
+        <!--  下面这个url是客户端访问的url，在form表格里面会有一个action = "./First"，就是为了拼成一个url，其中前面的点是表示当前的路径，可以认为是服务器的地址（http://localhost:8080/。当点击submit之后就会拼接成新的url也就是 http://localhost:8080/First。这个url根据web.xml配置文件中找到这个url应该由谁来处理。）-->
+        <url-pattern>/hi</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <!-- 下面的这个servlet-name是随意命名的，只需要与下面的servlet-mapping对应起来就可以了 -->
+        <servlet-name>UploadImageServlet</servlet-name>
+        <servlet-class>com.shop.Servlet.UploadImageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UploadImageServlet</servlet-name>
+        <!--  下面这个url是客户端访问的url，在form表格里面会有一个action = "./First"，就是为了拼成一个url，其中前面的点是表示当前的路径，可以认为是服务器的地址（http://localhost:8080/。当点击submit之后就会拼接成新的url也就是 http://localhost:8080/First。这个url根据web.xml配置文件中找到这个url应该由谁来处理。）-->
+        <url-pattern>/uploadimage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <!-- 下面的这个servlet-name是随意命名的，只需要与下面的servlet-mapping对应起来就可以了 -->
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.shop.Servlet.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <!--  下面这个url是客户端访问的url，在form表格里面会有一个action = "./First"，就是为了拼成一个url，其中前面的点是表示当前的路径，可以认为是服务器的地址（http://localhost:8080/。当点击submit之后就会拼接成新的url也就是 http://localhost:8080/First。这个url根据web.xml配置文件中找到这个url应该由谁来处理。）-->
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <!-- 下面的这个servlet-name是随意命名的，只需要与下面的servlet-mapping对应起来就可以了 -->
+        <servlet-name>ApplicationServlet</servlet-name>
+        <servlet-class>com.shop.Servlet.ApplicationServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ApplicationServlet</servlet-name>
+        <!--  下面这个url是客户端访问的url，在form表格里面会有一个action = "./First"，就是为了拼成一个url，其中前面的点是表示当前的路径，可以认为是服务器的地址（http://localhost:8080/。当点击submit之后就会拼接成新的url也就是 http://localhost:8080/First。这个url根据web.xml配置文件中找到这个url应该由谁来处理。）-->
+        <url-pattern>/ApplicationServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <!-- 下面的这个servlet-name是随意命名的，只需要与下面的servlet-mapping对应起来就可以了 -->
+        <servlet-name>FindApplicationServlet</servlet-name>
+        <servlet-class>com.shop.Servlet.FindApplicationServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FindApplicationServlet</servlet-name>
+        <!--  下面这个url是客户端访问的url，在form表格里面会有一个action = "./First"，就是为了拼成一个url，其中前面的点是表示当前的路径，可以认为是服务器的地址（http://localhost:8080/。当点击submit之后就会拼接成新的url也就是 http://localhost:8080/First。这个url根据web.xml配置文件中找到这个url应该由谁来处理。）-->
+        <url-pattern>/FindApplicationServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <!-- 下面的这个servlet-name是随意命名的，只需要与下面的servlet-mapping对应起来就可以了 -->
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.shop.Servlet.RegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <!--  下面这个url是客户端访问的url，在form表格里面会有一个action = "./First"，就是为了拼成一个url，其中前面的点是表示当前的路径，可以认为是服务器的地址（http://localhost:8080/。当点击submit之后就会拼接成新的url也就是 http://localhost:8080/First。这个url根据web.xml配置文件中找到这个url应该由谁来处理。）-->
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <!-- 下面的这个servlet-name是随意命名的，只需要与下面的servlet-mapping对应起来就可以了 -->
+        <servlet-name>GetgoodsServlet</servlet-name>
+        <servlet-class>com.shop.Servlet.GetgoodsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetgoodsServlet</servlet-name>
+        <!--  下面这个url是客户端访问的url，在form表格里面会有一个action = "./First"，就是为了拼成一个url，其中前面的点是表示当前的路径，可以认为是服务器的地址（http://localhost:8080/。当点击submit之后就会拼接成新的url也就是 http://localhost:8080/First。这个url根据web.xml配置文件中找到这个url应该由谁来处理。）-->
+        <url-pattern>/GetgoodsServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <!-- 下面的这个servlet-name是随意命名的，只需要与下面的servlet-mapping对应起来就可以了 -->
+        <servlet-name>ComitmentServlet</servlet-name>
+        <servlet-class>com.shop.Servlet.ComitmentServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ComitmentServlet</servlet-name>
+        <!--  下面这个url是客户端访问的url，在form表格里面会有一个action = "./First"，就是为了拼成一个url，其中前面的点是表示当前的路径，可以认为是服务器的地址（http://localhost:8080/。当点击submit之后就会拼接成新的url也就是 http://localhost:8080/First。这个url根据web.xml配置文件中找到这个url应该由谁来处理。）-->
+        <url-pattern>/ComitmentServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <!-- 下面的这个servlet-name是随意命名的，只需要与下面的servlet-mapping对应起来就可以了 -->
+        <servlet-name>FindComServlet</servlet-name>
+        <servlet-class>com.shop.Servlet.FindComServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FindComServlet</servlet-name>
+        <!--  下面这个url是客户端访问的url，在form表格里面会有一个action = "./First"，就是为了拼成一个url，其中前面的点是表示当前的路径，可以认为是服务器的地址（http://localhost:8080/。当点击submit之后就会拼接成新的url也就是 http://localhost:8080/First。这个url根据web.xml配置文件中找到这个url应该由谁来处理。）-->
+        <url-pattern>/FindComServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <!-- 下面的这个servlet-name是随意命名的，只需要与下面的servlet-mapping对应起来就可以了 -->
+        <servlet-name>OrderServlet</servlet-name>
+        <servlet-class>com.shop.Servlet.OrderServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>OrderServlet</servlet-name>
+        <!--  下面这个url是客户端访问的url，在form表格里面会有一个action = "./First"，就是为了拼成一个url，其中前面的点是表示当前的路径，可以认为是服务器的地址（http://localhost:8080/。当点击submit之后就会拼接成新的url也就是 http://localhost:8080/First。这个url根据web.xml配置文件中找到这个url应该由谁来处理。）-->
+        <url-pattern>/OrderServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <!-- 下面的这个servlet-name是随意命名的，只需要与下面的servlet-mapping对应起来就可以了 -->
+        <servlet-name>GetOrderServlet</servlet-name>
+        <servlet-class>com.shop.Servlet.GetOrderServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetOrderServlet</servlet-name>
+        <!--  下面这个url是客户端访问的url，在form表格里面会有一个action = "./First"，就是为了拼成一个url，其中前面的点是表示当前的路径，可以认为是服务器的地址（http://localhost:8080/。当点击submit之后就会拼接成新的url也就是 http://localhost:8080/First。这个url根据web.xml配置文件中找到这个url应该由谁来处理。）-->
+        <url-pattern>/GetOrderServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <!-- 下面的这个servlet-name是随意命名的，只需要与下面的servlet-mapping对应起来就可以了 -->
+        <servlet-name>AddGoodsServlet</servlet-name>
+        <servlet-class>com.shop.Servlet.AddGoodsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddGoodsServlet</servlet-name>
+        <!--  下面这个url是客户端访问的url，在form表格里面会有一个action = "./First"，就是为了拼成一个url，其中前面的点是表示当前的路径，可以认为是服务器的地址（http://localhost:8080/。当点击submit之后就会拼接成新的url也就是 http://localhost:8080/First。这个url根据web.xml配置文件中找到这个url应该由谁来处理。）-->
+        <url-pattern>/AddGoodsServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <!-- 下面的这个servlet-name是随意命名的，只需要与下面的servlet-mapping对应起来就可以了 -->
+        <servlet-name>ChangegoodsServlet</servlet-name>
+        <servlet-class>com.shop.Servlet.ChangegoodsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ChangegoodsServlet</servlet-name>
+        <!--  下面这个url是客户端访问的url，在form表格里面会有一个action = "./First"，就是为了拼成一个url，其中前面的点是表示当前的路径，可以认为是服务器的地址（http://localhost:8080/。当点击submit之后就会拼接成新的url也就是 http://localhost:8080/First。这个url根据web.xml配置文件中找到这个url应该由谁来处理。）-->
+        <url-pattern>/ChangegoodsServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <!-- 下面的这个servlet-name是随意命名的，只需要与下面的servlet-mapping对应起来就可以了 -->
+        <servlet-name>ChangeuserinfoServlet</servlet-name>
+        <servlet-class>com.shop.Servlet.ChangeuserinfoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ChangeuserinfoServlet</servlet-name>
+        <!--  下面这个url是客户端访问的url，在form表格里面会有一个action = "./First"，就是为了拼成一个url，其中前面的点是表示当前的路径，可以认为是服务器的地址（http://localhost:8080/。当点击submit之后就会拼接成新的url也就是 http://localhost:8080/First。这个url根据web.xml配置文件中找到这个url应该由谁来处理。）-->
+        <url-pattern>/ChangeuserinfoServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <!-- 下面的这个servlet-name是随意命名的，只需要与下面的servlet-mapping对应起来就可以了 -->
+        <servlet-name>DownloadServlet</servlet-name>
+        <servlet-class>com.shop.Servlet.DownloadServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DownloadServlet</servlet-name>
+        <!--  下面这个url是客户端访问的url，在form表格里面会有一个action = "./First"，就是为了拼成一个url，其中前面的点是表示当前的路径，可以认为是服务器的地址（http://localhost:8080/。当点击submit之后就会拼接成新的url也就是 http://localhost:8080/First。这个url根据web.xml配置文件中找到这个url应该由谁来处理。）-->
+        <url-pattern>/DownloadServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <!-- 下面的这个servlet-name是随意命名的，只需要与下面的servlet-mapping对应起来就可以了 -->
+        <servlet-name>UploadziliaoServlet</servlet-name>
+        <servlet-class>com.shop.Servlet.UploadziliaoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UploadziliaoServlet</servlet-name>
+        <!--  下面这个url是客户端访问的url，在form表格里面会有一个action = "./First"，就是为了拼成一个url，其中前面的点是表示当前的路径，可以认为是服务器的地址（http://localhost:8080/。当点击submit之后就会拼接成新的url也就是 http://localhost:8080/First。这个url根据web.xml配置文件中找到这个url应该由谁来处理。）-->
+        <url-pattern>/UploadziliaoServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <!-- 下面的这个servlet-name是随意命名的，只需要与下面的servlet-mapping对应起来就可以了 -->
+        <servlet-name>SearchServlet</servlet-name>
+        <servlet-class>com.shop.Servlet.SearchServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SearchServlet</servlet-name>
+        <!--  下面这个url是客户端访问的url，在form表格里面会有一个action = "./First"，就是为了拼成一个url，其中前面的点是表示当前的路径，可以认为是服务器的地址（http://localhost:8080/。当点击submit之后就会拼接成新的url也就是 http://localhost:8080/First。这个url根据web.xml配置文件中找到这个url应该由谁来处理。）-->
+        <url-pattern>/SearchServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <!-- 下面的这个servlet-name是随意命名的，只需要与下面的servlet-mapping对应起来就可以了 -->
+        <servlet-name>BarServlet</servlet-name>
+        <servlet-class>com.shop.Servlet.BarServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BarServlet</servlet-name>
+        <!--  下面这个url是客户端访问的url，在form表格里面会有一个action = "./First"，就是为了拼成一个url，其中前面的点是表示当前的路径，可以认为是服务器的地址（http://localhost:8080/。当点击submit之后就会拼接成新的url也就是 http://localhost:8080/First。这个url根据web.xml配置文件中找到这个url应该由谁来处理。）-->
+        <url-pattern>/BarServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <!-- 下面的这个servlet-name是随意命名的，只需要与下面的servlet-mapping对应起来就可以了 -->
+        <servlet-name>Web_LoginServlet</servlet-name>
+        <servlet-class>com.shop.Servlet.Web_LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Web_LoginServlet</servlet-name>
+        <!--  下面这个url是客户端访问的url，在form表格里面会有一个action = "./First"，就是为了拼成一个url，其中前面的点是表示当前的路径，可以认为是服务器的地址（http://localhost:8080/。当点击submit之后就会拼接成新的url也就是 http://localhost:8080/First。这个url根据web.xml配置文件中找到这个url应该由谁来处理。）-->
+        <url-pattern>/Web_LoginServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

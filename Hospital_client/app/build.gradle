@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        applicationId "com.cyansoft.maodou_manger"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:23.4.0'
+    implementation 'com.jakewharton:butterknife:8.1.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'org.xutils:xutils:3.3.20'
+    implementation 'com.demievil.library:refreshlayout:1.0.0@aar'
+
+    //添加的依赖
+    implementation 'com.squareup.okhttp3:okhttp:3.3.1'
+    implementation 'com.youth.banner:banner:1.4.10'
+
+    // butter knife
+    implementation 'com.jakewharton:butterknife:7.0.1'
+}
